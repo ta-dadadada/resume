@@ -1,0 +1,33 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": ":toc: macro :toc-title: Contents :toclevels: 2 :tabsize: 2 :sectanchors: :sectnums: :icons: font",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "watch": "bash ./build/watch.sh docs/resume.adoc",
+    "build": "bash ./build/gen-pdf.sh docs/resume.adoc && bash ./build/gen-html.sh docs/resume.adoc",
+    "lint": "textlint",
+    "fmt": "textlint --fix *.adoc"
+  },
+  "lint-staged": {
+    "*.{adoc,md}": "textlint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ta-dadadada/resume.git"
+  },
+  "keywords": [],
+  "author": "ta-dadadada",
+  "bugs": {
+    "url": "https://github.com/ta-dadadada/resume/issues"
+  },
+  "homepage": "https://github.com/ta-dadadada/resume#readme",
+  "devDependencies": {
+    "husky": "^8.0.2",
+    "lint-staged": "^13.1.0",
+    "textlint": "^12.3.1",
+    "textlint-plugin-asciidoctor": "^1.1.0",
+    "textlint-rule-preset-ja-spacing": "^2.2.0"
+  }
+}
