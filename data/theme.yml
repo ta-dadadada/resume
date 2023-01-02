@@ -1,0 +1,7 @@
+extends: default-with-font-fallbacks
+heading_h1_font_size: 18
+heading_h2_font_size: 16
+heading_h3_font_size: 14
+heading_h4_font_size: 12
+heading_h5_font_size: 11
+heading_h6_font_size: 10
