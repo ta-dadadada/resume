@@ -4,4 +4,5 @@
 
 ## データ
 
-TBW
+- [GitHub Pages](https://ta-dadadada.github.io/resume/)
+- [PDF](https://github.com/ta-dadadada/resume/releases)
